@@ -1,0 +1,11 @@
+function calcularArea(base, altura) {
+
+  let resultado = base * altura
+
+  return alert(`O resultado da multiplicação da base * altura é: ${resultado}`)
+
+}
+
+calcularArea(2, 1.87)
+
+Resultado da função é: O resultado da multiplicação da base * altura é: 3.74
