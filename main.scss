@@ -1,0 +1,107 @@
+@use 'variaveis';
+@use 'reset';
+@use "sass:math";
+
+@function percent($value) {
+    @return $value * 1% ;
+  }
+  
+  
+body {
+    background-color: #f5f6fa;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: variaveis.$primary-color;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: variaveis.$spacing 0;
+    }
+}
+
+.menu {
+    display: flex;
+
+    li {
+        font-weight: bold;
+        margin-left: 1.5 * variaveis.$spacing;
+
+        a {
+            color: variaveis.$text-color;
+            text-decoration: none;
+        }
+    }
+}
+
+section {
+    padding: 3.5 * variaveis.$spacing 0;
+}
+
+.products {
+    margin-top: 2.5 * variaveis.$spacing;
+    display: grid;
+    grid-template-columns: repeat(3, percent(32.66));
+    column-gap: percent(1);
+    row-gap: 4%;
+    width: 100%; 
+}
+
+.product-item {
+    img {
+        width: 100%;
+        border-radius: 16px;
+    }
+}
+
+.product-button {
+    display: block;
+    background-color: variaveis.$secondary-color;
+    color: variaveis.$text-color;
+    text-align: center;
+    padding: 0.5 * variaveis.$spacing 0;
+    border-radius: 8px;
+    margin-top: 0.5 * variaveis.$spacing;
+    text-decoration: none;
+
+    &:hover {
+        background-color: variaveis.$secondary-hover;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, percent(48.5));
+        column-gap: percent(3);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .products {
+        display: block;
+    }
+    
+    .product-item {
+        margin-bottom: 2 * variaveis.$spacing;
+    }
+}

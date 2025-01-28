@@ -1,0 +1,20 @@
+{
+  "name": "ebac",
+  "version": "1.0.0",
+  "description": "Cada branch representa um exercicio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass main.scss main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DennerSA/Ebac.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DennerSA/Ebac/issues"
+  },
+  "homepage": "https://github.com/DennerSA/Ebac#readme"
+}
