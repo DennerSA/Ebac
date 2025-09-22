@@ -1,0 +1,24 @@
+{
+  "name": "exercicio_less",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "less": "less-watch-compiler ./src/styles ./build/styles",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DennerSA/Ebac-exercicio_less.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DennerSA/Ebac-exercicio_less/issues"
+  },
+  "homepage": "https://github.com/DennerSA/Ebac-exercicio_less#readme",
+  "description": "",
+  "devDependencies": {
+    "less": "^4.4.1",
+    "less-watch-compiler": "^1.16.3"
+  }
+}
