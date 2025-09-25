@@ -1,0 +1,16 @@
+{
+  "name": "exercicio_boas_praticas_css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}
